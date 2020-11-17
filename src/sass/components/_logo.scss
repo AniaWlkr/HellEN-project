@@ -30,12 +30,13 @@
         width: 80px;
     }
     .logo-part-one {
-        @include font(800, 13px, 18px, 0.04em)
+        @include font(800, 13px, 18px, 0.08em)
     }
     .logo-part-two {
-        @include font(700, 5px, 7px, 0.17em)
+        @include font(700, 5px, 7px, 0.14em)
     }
     .logo-img {
+        margin: 0 4px;
         width: 15px;
     }
 }
