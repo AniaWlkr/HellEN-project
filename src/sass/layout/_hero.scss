@@ -2,27 +2,14 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  // background-image: url('../images/hero/hero-bg-mob.png');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: left bottom;
-
-  // @media screen and (min-width: 320px) {
-  //   background-image: url('../images/hero/hero-bg-mob.png');
-  // }
-
   @media screen and (min-width: 768px) {
     padding-top: 70px;
     padding-bottom: 65px;
-
-    // background-image: url('../images/hero/hero-bg-tabl.png');
   }
 
   @media screen and (min-width: 1316px) {
-    padding-top: 45px;
+    padding-top: 46px;
     padding-bottom: 10px;
-
-    // background-image: url('../images/hero/hero-bg-desc.png');
   }
 
   @media screen and (min-width: 768px) {
@@ -85,19 +72,41 @@
   }
 
   &-link {
-    display: inline-flex;
+    display: block;
+    width: 260px;
     text-align: center;
-    padding: 14px;
-    margin-bottom: 30px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 
     @include font(700, 12px, 15px, 0.08em);
     text-transform: uppercase;
     color: $white-color;
     background-color: $accent-color;
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 400ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+
     @media screen and (min-width: 1316px) {
+      width: 354px;
+      height: 70px;
       padding: 26px;
       @include font(700, 14px, 17px, 0.08em);
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 15px 3px rgba(255, 107, 9, 0.4);
+      transform: scale(1.05);
+      color: $accent-color;
+      border: 2px solid $accent-color;
+      background-color: transparent;
     }
   }
 
@@ -114,6 +123,10 @@
   &-img {
     max-width: 100%;
     margin: 0 auto;
+
+    @media screen and (min-width: 1317px) {
+      width: 100%;
+    }
   }
 }
 
@@ -129,11 +142,12 @@
 
   @media screen and (min-width: 768px) {
     background-image: url('../images/hero/hero-bg-tabl.png');
-    background-position: left 0 top -60px;
+    background-position: left 0 bottom 138px;
   }
 
   @media screen and (min-width: 1316px) {
     background-image: url('../images/hero/hero-bg-desc.png');
+    background-position: left 0 bottom 230px;
   }
 }
 

@@ -32,6 +32,8 @@
     align-items: center;
 
     @media screen and (min-width: 1316px) {
+      width: 448px;
+      height: 102px;
       padding-left: 82px;
     }
 
@@ -82,7 +84,7 @@
     }
 
     @media screen and (min-width: 1316px) {
-      width: 366px;
+      width: 100%;
     }
   }
 
