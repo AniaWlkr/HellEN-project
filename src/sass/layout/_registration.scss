@@ -1,29 +1,41 @@
 .registration{
     width: 100%;
-    
     background-color: $background-program;
-    
-    // background: url("../images/registration/bg-form.jpg");
-    // background: rgba(17, 21, 24, 0.8);
-    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    //    opacity: 20%;
+    background-image: linear-gradient(rgba(17, 21, 24, 0.8),rgba(17, 21, 24, 0.8)),url("../images/registration/bg-form-mobil.jpg");
+ 
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 0px;
-   
-    @media screen and (min-width: 768px) {
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+      screen and (min-resolution: 192dpi) and (max-width: 767px),
+      screen and (min-resolution: 2dppx) and (max-width: 767px) {
+      background-image: linear-gradient(rgba(17, 21, 24, 0.8),rgba(17, 21, 24, 0.8)),url("../images/registration/bg-form-mobil@2x.jpg");
+    }
+     @media screen and (min-width: 768px) {
         padding-top: 50px;
         padding-bottom: 71px;
+        background-image: linear-gradient(rgba(17, 21, 24, 0.8),rgba(17, 21, 24, 0.8)),url("../images/registration/bg-form-tablet.jpg");
+      }
+      @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      background-image: linear-gradient(rgba(17, 21, 24, 0.8),rgba(17, 21, 24, 0.8)),url("../images/registration/bg-form-tablet@2x.jpg"); 
       }
       @media screen and (min-width: 1316px) {
         padding-top: 100px;
         padding-bottom: 62px;
+        background-image: linear-gradient(rgba(17, 21, 24, 0.8),rgba(17, 21, 24, 0.8)),url("../images/registration/bg-form-desktop.jpg");
       }
+      @media screen and (min-device-pixel-ratio: 2) and (min-width: 1316px),
+      screen and (min-resolution: 192dpi) and (min-width: 1316px),
+      screen and (min-resolution: 2dppx) and (min-width: 1316px) {
+      background-image: linear-gradient(rgba(17, 21, 24, 0.8),rgba(17, 21, 24, 0.8)),url("../images/registration/bg-form-desktop@2x.jpg");
+      }
+     
       & .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        // background: rgba(17, 21, 24, 0.8);
          }
       &-title{
           width: 280px;
@@ -137,7 +149,7 @@
     color: $white-color;
     border: none;
     cursor: pointer;
-    // transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover{
       width: 290px;
