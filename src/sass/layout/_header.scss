@@ -5,13 +5,18 @@
         background-color: transparent;
         border: 2px solid $accent-color;
         color: $accent-color;
-        transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 400ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
             background-color: $accent-color;
             border: 2px solid transparent;
             color: $white-color;
+            box-shadow: 0px 0px 15px 3px rgba(255, 107, 9, 0.4);
+            transform: scale(1.05);
         }
+        cursor: pointer;
     }
 
     & .container {
@@ -40,6 +45,11 @@
     height: 40px;
     border: none;
     background-color: transparent;
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
 
     & .icon-cross {
         display: none;
@@ -92,6 +102,7 @@
     &:hover,
     &:focus {
         color: $accent-color;
+        transform: scale(1.05);
     }
 }
 

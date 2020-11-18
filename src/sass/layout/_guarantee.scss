@@ -1,16 +1,15 @@
 .guarantee {
   padding-top: 50px;
-  background-color: #E5E5E5;
-
+  
+  &-wrapper {
+    padding: 30px 0;
+    background-color: #f1f1f1;
+  }
 
   &-title {
     @extend %title;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     text-align: center;
-  }
-
-  &-list {
-    background-color: #f1f1f1;
   }
 
   &-item {
@@ -50,6 +49,7 @@
     &:hover::before,
     &:focus::before {
       animation: animate125 1000ms infinite 10ms;
+      left: -11px;
     }
   }
 }
@@ -88,13 +88,17 @@
   .guarantee {
     padding-top: 130px;
 
+    &-wrapper {
+      padding: 45px 0;
+    }
+
     &-list {
       padding-left: 81px;
       padding-right: 81px;
     }
 
     &-title {
-      margin-bottom: 100px;
+      margin-bottom: 50px;
     }
 
     &-item {
