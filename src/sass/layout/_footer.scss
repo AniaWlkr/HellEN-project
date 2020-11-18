@@ -29,6 +29,12 @@
   &-phone:focus {
     color: $accent-color;
   }
+
+  &-phone:hover::before,
+  &-phone:focus::before {
+    animation: ring 4s .7s ease-in-out infinite;
+  }
+
   &-phone::before {
     content: '';
     display: block;
@@ -39,6 +45,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     @media screen and (min-width: 768px) {
       width: 25px;
       height: 25px;
@@ -48,12 +55,56 @@
       height: 30px;
     }
   }
+
+  @keyframes ring {
+    0% { transform: rotate(0); }
+    5% { transform: rotate(30deg); }
+    10% { transform: rotate(-28deg); }
+    15% { transform: rotate(34deg); }
+    20% { transform: rotate(-32deg); }
+    25% { transform: rotate(30deg); }
+    30% { transform: rotate(-28deg); }
+    35% { transform: rotate(26deg); }
+    40% { transform: rotate(-24deg); }
+    45% { transform: rotate(22deg); }
+    50% { transform: rotate(-20deg); }
+    55% { transform: rotate(18deg); }
+    60% { transform: rotate(-16deg); }
+    65% { transform: rotate(14deg); }
+    70% { transform: rotate(-12deg); }
+    75% { transform: rotate(10deg); }
+    80% { transform: rotate(-8deg); }
+    85% { transform: rotate(6deg); }
+    90% { transform: rotate(-4deg); }
+    95% { transform: rotate(2deg); }
+    100% { transform: rotate(-1deg); }
+  }
 }
 .insta-link {
   width: 40px;
   height: 40px;
   background-image: url('../images/header_footer/instagram-icon.svg');
+
+  &:hover,
+  &:focus {
+    animation: animate125 1000ms infinite 10ms;
+  }
 }
+
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer {
     &-contact {
@@ -78,6 +129,7 @@
     }
   }
 }
+
 @media screen and (min-width: 768px) {
   .footer {
     &-contact {
@@ -93,6 +145,7 @@
     }
   }
 }
+
 @media screen and (max-width: 1316px) {
   .footer {
     &-contact {
@@ -100,6 +153,7 @@
     }
   }
 }
+
 @media screen and (min-width: 1316px) {
   .footer {
     &-contact {
