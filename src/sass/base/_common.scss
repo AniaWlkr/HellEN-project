@@ -9,6 +9,9 @@ body {
   font-style: normal;
   letter-spacing: 0.08em;
 }
+body.modal-open {
+  overflow: hidden;
+}
 img {
   display: block;
 }
