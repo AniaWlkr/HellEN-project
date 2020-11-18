@@ -24,8 +24,6 @@
   margin: 0 auto;
   transform: perspective(600px) translate(-50%, -50%) rotateX(0deg);
   transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
-
- 
 }
 
 .modal {
@@ -33,42 +31,40 @@
   height: auto;
   margin: 0 auto;
   position: relative;
-  padding: 50px 20px;  
-  background-image: url("../images/hero/hero-bg-mob.png");
+  padding: 50px 20px;
+  background-image: url('../images/hero/hero-bg-mob.png');
   background-color: $white-color;
   background-position: center;
   background-size: contain;
   transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
-   transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  background-image: url("../images/hero/hero-bg-mob@2x.png"); 
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url('../images/hero/hero-bg-mob@2x.png');
   }
 
-
   @media screen and (min-width: 768px) {
-  background-size: cover;
-  background-image: url("../images/hero/hero-bg-tabl.png"); 
+    background-size: cover;
+    background-image: url('../images/hero/hero-bg-tabl.png');
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  background-image: url("../images/hero/hero-bg-tabl@2x.png"); 
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url('../images/hero/hero-bg-tabl@2x.png');
   }
 
-
   @media screen and (min-width: 1316px) {
-  padding: 62px 20px;
-  background-image: url("../images/hero/hero-bg-desc.png"); 
+    padding: 62px 20px;
+    background-image: url('../images/hero/hero-bg-desc.png');
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1316px),
-  screen and (min-resolution: 192dpi) and (min-width: 1316px),
-  screen and (min-resolution: 2dppx) and (min-width: 1316px) {
-  background-image: url("../images/hero/hero-bg-desc@2x.png"); 
+    screen and (min-resolution: 192dpi) and (min-width: 1316px),
+    screen and (min-resolution: 2dppx) and (min-width: 1316px) {
+    background-image: url('../images/hero/hero-bg-desc@2x.png');
   }
 
   .backdrop.is-hidden & {
@@ -87,11 +83,11 @@
     border: none;
     cursor: pointer;
     transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-  @media all and (-ms-high-contrast:none), (-ms-high-contrast:active){
-    background-image: url("../images/cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      background-image: url('../images/cross.svg');
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
@@ -126,7 +122,7 @@
 
   &-field {
     position: relative;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 
     @media screen and (min-width: 1316px) {
       margin-bottom: 40px;
@@ -138,19 +134,19 @@
     height: 48px;
     border: 1px solid $secondary-text-color;
     padding-left: 28px;
-       
+
     @media screen and (min-width: 1316px) {
-     height: 70px;
-     padding-left: 40px;
-     }    
+      height: 70px;
+      padding-left: 40px;
+    }
 
     &:invalid:not(:focus):placeholder-shown,
-    &:valid{
+    &:valid {
       color: $secondary-text-color;
     }
 
     &:invalid {
-      color: #ff0000;    
+      color: #ff0000;
     }
     &:hover,
     &:focus {
@@ -159,50 +155,48 @@
 
     &::-ms-clear {
       display: none;
-   }
+    }
   }
- 
 
   &-label {
     position: absolute;
     top: 50%;
-    left: 28px;   
-    transform: translateY(-50%);   
-    -ms-transform: translateY(-50px);  
+    left: 28px;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50px);
     @include font(600, 12px, 14px, 0.03em);
     color: $main-text-color;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 1316px) {
-     left: 40px;
-     -ms-transform: translateY(-60px);
-     @include font(600, 14px, 16px, 0.03em);
+      left: 40px;
+      -ms-transform: translateY(-60px);
+      @include font(600, 14px, 16px, 0.03em);
     }
-       
+
     .modal-form-field:focus-within > &,
     .modal-form-input:not(:placeholder-shown) + & {
-     transform: translateY(-45px);
-     color: $secondary-text-color;
+      transform: translateY(-45px);
+      color: $secondary-text-color;
 
-     @media screen and (min-width: 1316px) {
-      transform: translateY(-60px);
-     }
+      @media screen and (min-width: 1316px) {
+        transform: translateY(-60px);
+      }
     }
   }
 
-
   &-time {
-    display:flex;
+    display: flex;
     align-items: center;
     margin-bottom: 30px;
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
-    flex-direction: column;
+      flex-direction: column;
     }
 
     @media screen and (min-width: 1316px) {
-    justify-content: space-between;
-    margin-bottom: 40px;
+      justify-content: space-between;
+      margin-bottom: 40px;
     }
   }
 
@@ -211,7 +205,7 @@
     @include font(600, 12px, 14px, 0.03em);
     color: $secondary-text-color;
 
-    @media screen and (min-width:768px){
+    @media screen and (min-width: 768px) {
       margin: 0px 11px 0px 0px;
     }
 
@@ -220,23 +214,21 @@
     }
   }
 
-  
   &-imput-time {
     position: relative;
     padding: 0px 15px 0px 15px;
     width: 130px;
     border: 1px solid $accent-color;
     color: $accent-color;
-    @include font(600, 14px, 16px, 0.10em);
+    @include font(600, 14px, 16px, 0.1em);
     cursor: pointer;
 
-    @media screen and (min-width: 1316px) {      
-      width: 200px;  
+    @media screen and (min-width: 1316px) {
+      width: 200px;
       padding: 0px 15px 0px 15px;
       @include font(600, 20px, 22px, 0.12em);
-      }
+    }
 
-      
     &::-webkit-datetime-edit-fields-wrapper {
       display: flex;
     }
@@ -254,12 +246,12 @@
     &::-webkit-inner-spin-button {
       padding: 15px 5px;
 
-     @media screen and (min-width: 1316px) {
-       padding: 20px 10px;
-     }
-      
+      @media screen and (min-width: 1316px) {
+        padding: 20px 10px;
+      }
+
       &:hover,
-      &:focus {       
+      &:focus {
         color: $white-color;
         background-color: $accent-color;
         outline: none;
@@ -285,51 +277,50 @@
   justify-content: center;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px){
-   margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
   }
 
- &-input {
+  &-input {
     position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   clip: rect(0 0 0 0);
-   overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
- &-desc {  
-   @include font(600, 10px, 12px, 0.03em);
-   color: $secondary-text-color;
+  &-desc {
+    @include font(600, 10px, 12px, 0.03em);
+    color: $secondary-text-color;
 
-   @media screen and (min-width: 1316px) {
-   @include font(600, 16px, 18px, 0.03em);
-   }
- }
+    @media screen and (min-width: 1316px) {
+      @include font(600, 16px, 18px, 0.03em);
+    }
+  }
 
   &-icon {
     display: block;
     margin: 0px 10px 0px 37px;
     padding: 5px;
     width: 15px;
-    height: 15px;  
+    height: 15px;
     border: 1px solid $accent-color;
 
-    
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       margin: 0px 10px 0px 0px;
     }
 
-    @media screen and (min-width: 1316px){
+    @media screen and (min-width: 1316px) {
       width: 20px;
       height: 20px;
     }
-  
+
     .modal-checkbox-input:checked + & {
       margin-right: 10px;
-      background-image: url("../images/teacher/vector.svg");
+      background-image: url('../images/teacher/vector.svg');
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -344,7 +335,7 @@
   padding: 14px;
   border: 0px;
   align-self: center;
-  background-image: radial-gradient(circle, #fd8637, #ff6600, #c03d00,);
+  background-image: radial-gradient(circle, #fd8637, #ff6600, #c03d00);
   background-size: 250% 250%;
   animation: gradient 5000ms ease infinite;
   color: $white-color;
