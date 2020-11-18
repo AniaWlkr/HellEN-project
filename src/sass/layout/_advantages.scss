@@ -14,15 +14,18 @@
     // letter-spacing: 0.03em;
     // color: #ffffff;
     margin-bottom: 30px;
-    width: 180px;
+    width: 50%;
+    text-align: left;
+
     @extend %title;
     color: $white-color;
 
     @media screen and (min-width: 768px) {
-      width: 370px;
-      font-size: 26px;
-      line-height: 34px;
-      letter-spacing: 0.03em;
+      width: 100%;
+
+      // font-size: 26px;
+      // line-height: 34px;
+      // letter-spacing: 0.03em;
       text-align: center;
     }
 
