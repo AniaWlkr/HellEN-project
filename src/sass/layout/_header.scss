@@ -41,6 +41,11 @@
     border: none;
     background-color: transparent;
 
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+
     & .icon-cross {
         display: none;
     }
