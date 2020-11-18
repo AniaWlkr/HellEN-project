@@ -1,5 +1,6 @@
 .teacher {
   padding-bottom: 50px;
+  padding-top: 50px;
 
   &-title {
     color: $black-color;
@@ -60,7 +61,7 @@
 .icon::before {
   content: '';
   display: block;
-  height: 4px;
+  height: 2px;
   width: 20px;
   margin-bottom: 20px;
   background-image: url(../images/teacher/icon.svg);
@@ -120,6 +121,9 @@
 
 @media screen and (min-width: 1316px) {
   .teacher {
+    padding-bottom: 65px;
+    padding-top: 65px;
+
     &-wrapper {
       display: flex;
 
@@ -176,5 +180,6 @@
 
   .icon::before {
     margin-bottom: 40px;
+    width: 24px;
   }
 }
