@@ -1,9 +1,13 @@
 .guarantee {
   padding-top: 50px;
-  
-  &-wrapper {
-    padding: 30px 0;
+//   &-wrapper {
+//     padding: 30px 0;
+//     background-color: #f1f1f1;
+//   }
+  &-box {
     background-color: #f1f1f1;
+    padding-top: 30px;
+    padding-bottom: 31px;
   }
 
   &-title {
@@ -30,6 +34,7 @@
       border-left: 1px dashed $main-text-color;
     }
 
+
     &::before {
       content: '';
       width: 14px;
@@ -37,8 +42,8 @@
 
       position: absolute;
       top: 0;
-      left: 0;
-      transform: translate(-50%, 0%);
+      left: -7px;
+
 
       background-image: url('../images/header_footer/campfire.svg');
 
@@ -73,6 +78,11 @@
 @media screen and (min-width: 768px) {
   .guarantee {
 
+    &-box {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
     &-item:not(:last-child) {
       padding-bottom: 23px;
     }
@@ -88,8 +98,14 @@
   .guarantee {
     padding-top: 130px;
 
-    &-wrapper {
-      padding: 45px 0;
+
+    &-box {
+      padding-top: 50px;
+      padding-bottom: 45px;
+
+//     &-wrapper {
+//       padding: 45px 0;
+
     }
 
     &-list {
@@ -110,7 +126,7 @@
       &::before {
         width: 22px;
         height: 30px;
-        transform: translate(-50%, 0%);
+        left: -10px;
       }
     }
   }
