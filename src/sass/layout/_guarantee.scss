@@ -3,9 +3,15 @@
   background-color: #E5E5E5;
 
 
+  &-box {
+    background-color: #f1f1f1;
+    padding-top: 30px;
+    padding-bottom: 31px;
+  }
+
   &-title {
     @extend %title;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -30,6 +36,7 @@
       padding-bottom: 23px;
       border-left: 1px dashed $main-text-color;
     }
+
 
     &::before {
       content: '';
@@ -73,6 +80,11 @@
 @media screen and (min-width: 768px) {
   .guarantee {
 
+    &-box {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
     &-item:not(:last-child) {
       padding-bottom: 23px;
     }
@@ -88,13 +100,18 @@
   .guarantee {
     padding-top: 130px;
 
+    &-box {
+      padding-top: 50px;
+      padding-bottom: 45px;
+    }
+
     &-list {
       padding-left: 81px;
       padding-right: 81px;
     }
 
     &-title {
-      margin-bottom: 100px;
+      margin-bottom: 50px;
     }
 
     &-item {
