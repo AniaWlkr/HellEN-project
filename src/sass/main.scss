@@ -11,6 +11,7 @@
 @import './utils/visually-hidden';
 @import './utils/mixins';
 @import './utils/placeholders';
+@import "./utils/animation";
 
 // BASE
 @import './base/common';
@@ -19,6 +20,7 @@
 // COMPONENTS
 @import './components/logo';
 @import './components/modal';
+@import './components/to-up';
 
 // LAYOUT
 @import './layout/header';
@@ -27,7 +29,9 @@
 @import './layout/problems';
 @import './layout/about';
 @import './layout/program';
+@import './layout/teacher';
 @import './layout/guarantee';
 @import './layout/registration';
 @import './layout/feedback';
 @import './layout/footer';
+@import './layout/advantages';

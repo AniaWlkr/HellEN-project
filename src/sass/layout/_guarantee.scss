@@ -1,7 +1,9 @@
 .guarantee {
   padding-top: 50px;
-
-
+//   &-wrapper {
+//     padding: 30px 0;
+//     background-color: #f1f1f1;
+//   }
   &-box {
     background-color: #f1f1f1;
     padding-top: 30px;
@@ -12,10 +14,6 @@
     @extend %title;
     margin-bottom: 30px;
     text-align: center;
-  }
-
-  &-list {
-    background-color: #f1f1f1;
   }
 
   &-item {
@@ -56,6 +54,7 @@
     &:hover::before,
     &:focus::before {
       animation: animate125 1000ms infinite 10ms;
+      left: -11px;
     }
   }
 }
@@ -99,9 +98,14 @@
   .guarantee {
     padding-top: 130px;
 
+
     &-box {
       padding-top: 50px;
       padding-bottom: 45px;
+
+//     &-wrapper {
+//       padding: 45px 0;
+
     }
 
     &-list {

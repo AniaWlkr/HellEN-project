@@ -55,30 +55,42 @@
       }
     }
     //Фото випускника
-    &-picture {
+    &-thumb {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      overflow: hidden;
       margin-bottom: 20px;
 
       @media screen and(max-width:767px) {
-        width: 90px;
-        height: 90px;
         margin: 0 auto 20px;
       }
 
-      @media screen and(max-width:1315px) {
+      @media screen and(min-width:768px) and(max-width:1315px) {
         width: 120px;
         height: 120px;
       }
 
-      width: 150px;
-      height: 150px;
+      @media screen and(min-width:1316px) {
+        width: 150px;
+        height: 150px;
+      }
     }
+    //картинка
+    &-image {
+      width: 100%;
+    }
+
     //Иконка соцсети
     &-social {
       display: block;
       margin: 0 auto;
       width: 30px;
       height: 30px;
-      background-image: url('../images/header_footer/instagram-icon.svg');
+      background-image: url('../images/feedback/instagram-icon.jpg');
       background-position: 0 0;
       background-size: contain;
       transition: transform 500ms linear;
@@ -196,13 +208,22 @@
   @media screen and(max-width:767px) {
     display: block;
   }
+  &-thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &-image {
+    width: 100%;
+  }
   //Список слайдов
   & .slick-list {
     width: 184px;
     margin: 0 auto;
   }
   & .slick-track {
-    min-height: 60px;
+    padding: 10px 0;
   }
   //центральний слайд
   & .slick-slide {
@@ -210,7 +231,7 @@
     &.slick-center {
       transform: scale(1.2);
       & .feedback-small-icon {
-        border: 1px solid $accent-color;
+        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
       }
     }
   }
@@ -247,22 +268,24 @@
   z-index: 999999;
   position: absolute;
   font-size: 0;
-  // width: 32px; //+4
-  // height: 20px; //+4
+  // width: 28px; //+4
+  // height: 16px; //+4
 
-  width: 28px; //original size
-  height: 16px; //original size
+  width: 32px; //original size
+  height: 20px; //original size
   border: none;
   background-color: transparent;
-  background-size: cover;
+  background-size: 28px 16px;
+  background-repeat: no-repeat;
   cursor: pointer;
+  // outline: none;
   transition: transform 500ms linear;
   &:hover,
   &:focus {
     transform: scale(1.2);
   }
   @media screen and(max-width:767px) {
-    bottom: 18px;
+    bottom: 24px;
   }
   @media screen and(min-width:768px) {
     top: 50%;
@@ -271,14 +294,14 @@
   &.slick-prev {
     left: 10px;
 
-    background-position: left center;
+    background-position: center center;
     background-image: url('../images/feedback/icon-previous-arrow.svg');
   }
   // Стрелка вправо
   &.slick-next {
     right: 10px;
 
-    background-position: right center;
+    background-position: center center;
     background-image: url('../images/feedback/icon-next-arrow.svg');
   }
 }
@@ -314,30 +337,31 @@
     top: 0;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    background-size: cover;
     background-position: 0 0;
+    border-radius: 50%;
     transition: all 500ms linear;
     cursor: pointer;
   }
   & li:nth-child(1) button::after {
-    background-image: url('../images/feedback/big-slide-1.jpg');
+    background-image: url('../images/feedback/anna/anna-icon-108x108@2x.jpg');
   }
   & li:nth-child(2) button::after {
-    background-image: url('../images/feedback/big-slide-2.jpg');
+    background-image: url('../images/feedback/lena/lena-icon-108x108@2x.jpg');
   }
   & li:nth-child(3) button::after {
-    background-image: url('../images/feedback/big-slide-3.jpg');
+    background-image: url('../images/feedback/igor/igor-icon-108x108@2x.jpg');
   }
   & li:nth-child(4) button::after {
-    background-image: url('../images/feedback/big-slide-4.jpg');
+    background-image: url('../images/feedback/tatiana/tatiana-icon-108x108@2x.jpg');
   }
   & li:nth-child(5) button::after {
-    background-image: url('../images/feedback/big-slide-5.jpg');
+    background-image: url('../images/feedback/tanya/tanya-icon-108x108@2x.jpg');
   }
   & li:nth-child(6) button::after {
-    background-image: url('../images/feedback/big-slide-6.jpg');
+    background-image: url('../images/feedback/women/women-icon-108x108@2x.jpg');
   }
   & li:nth-child(7) button::after {
-    background-image: url('../images/feedback/big-slide-7.jpg');
+    background-image: url('../images/feedback/girl/girl-icon-108x108@2x.jpg');
   }
 }
