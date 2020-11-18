@@ -70,6 +70,13 @@
     &:not(:last-child) {
       margin-bottom: 15px;
     }
+    &:hover {
+      outline: 3px solid $white-color;
+      outline-offset: -5px;
+    }
+  }
+  .about-list-position {
+    width: 267px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1315px) {
@@ -81,6 +88,10 @@
       width: 334px;
       height: 334px;
     }
+  }
+  .about-list-item:hover {
+    outline: 3px solid $white-color;
+    outline-offset: -15px;
   }
   .about-list-item:nth-child(2n + 1) {
     margin-right: 20px;
@@ -95,6 +106,7 @@
     margin-bottom: 52px;
   }
   .about-list-position {
+    width: 293px;
     height: 99px;
     margin-right: 20px;
     margin-left: 20px;
@@ -129,6 +141,10 @@
     }
     &:nth-child(-n + 3) {
       margin-bottom: 20px;
+    }
+    &:hover {
+      outline: 3px solid $white-color;
+      outline-offset: -25px;
     }
   }
   .about-list-svg {
