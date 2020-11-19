@@ -93,7 +93,7 @@
       background-image: url('../images/feedback/instagram-icon.jpg');
       background-position: 0 0;
       background-size: contain;
-      transition: transform 500ms linear;
+      transition: transform 250ms;
 
       &:hover,
       &:focus {
@@ -216,6 +216,7 @@
   }
   &-image {
     width: 100%;
+    cursor: pointer;
   }
   //Список слайдов
   & .slick-list {
@@ -228,6 +229,7 @@
   //центральний слайд
   & .slick-slide {
     transition: transform 1000ms linear;
+    outline: none;
     &.slick-center {
       transform: scale(1.2);
       & .feedback-small-icon {
@@ -278,7 +280,7 @@
   background-size: 28px 16px;
   background-repeat: no-repeat;
   cursor: pointer;
-  // outline: none;
+  outline: none;
   transition: transform 500ms linear;
   &:hover,
   &:focus {
@@ -328,6 +330,7 @@
     height: 54px;
     border: none;
     background-color: transparent;
+    outline: none;
   }
   // содержимое точки
   & li button::after {
