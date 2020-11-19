@@ -48,7 +48,11 @@
 
 
   <script>
-    new WOW().init();
+    new WOW().init(
+      {
+        boxClass: 'wow', // класс, скрывающий элемент до момента отображения на экране (по умолчанию, wow)
+      },
+    );
   </script>
 
 </body>
