@@ -85,11 +85,16 @@
         top: 0;
         left: 0;
         width: 100%;
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
         background-color: rgba(17, 21, 24, 0.9);
         z-index: 10;
+        transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
         &.is-open {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
         }
     }
 }
@@ -108,7 +113,7 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1315px) {
-    .nav-menu.is-open {
+    .nav-menu {
         display: flex;
         justify-content: center;
     }
