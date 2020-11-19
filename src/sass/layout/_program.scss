@@ -256,11 +256,11 @@
     &-language-section {
       @include font(700, 20px, 33px, 0.08em);
       padding-bottom: 10px;
-      margin-left: 20px;
+      margin-left: 30px;
     }
 
     &-language-section::after {
-      left: -18px;
+      left: -30px;
       top: 0px;
       width: 17px;
       height: 3px;
@@ -269,6 +269,30 @@
     &-secondary-list {
       display: flex;
       flex-direction: column;
+    }
+
+    &-list-item::after {
+      position: absolute;
+
+      display: block;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $white-color;
+      transform: translate(-45%, 70%);
+
+      transition-property: background-color, transform;
+      transition-duration: 500ms;
+      transition-timing-function: linear;
+    }
+
+    &:hover &-list-item::after,
+    &:focus &-list-item::after {
+      transform: background-color, transform;
+      background-color: $accent-color;
     }
 
     &-list:first-child {
