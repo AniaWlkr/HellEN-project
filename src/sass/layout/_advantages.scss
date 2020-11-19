@@ -1,4 +1,7 @@
 .advantages {
+  @media screen and(max-width:767px) {
+    margin-top: -50px;
+  }
   counter-reset: section;
   background: linear-gradient(
     rgba(17, 21, 24, 1) 75%,

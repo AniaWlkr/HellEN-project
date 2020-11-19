@@ -12,6 +12,9 @@
   }
 
   &-image {
+    @media screen and(max-width:767px) {
+      width: 176px;
+    }
     position: absolute;
     bottom: -100px;
     right: -56px;
@@ -53,7 +56,9 @@
   &-all {
     padding: 0 70px;
   }
-
+  @media screen and(max-width:767px) {
+    padding: 50px 0 100px 0;
+  }
   padding: 50px 0 50px 0;
   background-color: $background-program;
 
