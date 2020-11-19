@@ -10,13 +10,15 @@ $(document).ready(function(){
     waitForAnimate: false,
     autoplay:true,
     autoplaySpeed: 4000,
+    pauseOnHover: true,    
+          pauseOnFocus:true,
      responsive: [
       {
          breakpoint: 768,
         settings: {
           arrows:false,
           dots: false,
-          waitForAnimate: true,
+          waitForAnimate: false,
           asNavFor: ".small-slider",
         },
       }
@@ -35,8 +37,10 @@ $(document).ready(function(){
           centerPadding: 20,
           speed: 1000,
           easing: 'ease',     
-          waitForAnimate: true,
-          focusOnSelect: true,  
+          waitForAnimate: false,
+           focusOnSelect: true, 
+           pauseOnHover: true,
+          pauseOnFocus:true,
           asNavFor: ".slider",
         },
       }
