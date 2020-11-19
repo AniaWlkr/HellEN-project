@@ -152,8 +152,8 @@
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover{
-      width: 290px;
-      height: 60px;
+      transform:scale(1.05);
+     
       box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
     }
 
@@ -171,8 +171,8 @@
     margin-top: 80px;
     padding: 25px;
     &:hover{
-      width: 370px;
-      height: 80px;
+      transform:scale(1.1);
+           
     }
     
 }
