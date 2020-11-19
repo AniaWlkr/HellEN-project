@@ -95,18 +95,8 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: $white-color;
-    transform: translate(-45%, 70%);
-
-    transition-property: background-color, transform;
-    transition-duration: 500ms;
-    transition-timing-function: linear;
-  }
-
-  &:hover &-list-item::after,
-  &:focus &-list-item::after {
-    transform: background-color, transform;
     background-color: $accent-color;
+    transform: translate(-45%, 70%);
   }
 
   &-language-section {
@@ -278,6 +268,30 @@
     &-secondary-list {
       display: flex;
       flex-direction: column;
+    }
+
+    &-list-item::after {
+      position: absolute;
+
+      display: block;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $white-color;
+      transform: translate(-45%, 70%);
+
+      transition-property: background-color, transform;
+      transition-duration: 500ms;
+      transition-timing-function: linear;
+    }
+
+    &:hover &-list-item::after,
+    &:focus &-list-item::after {
+      transform: background-color, transform;
+      background-color: $accent-color;
     }
 
     &-list:first-child {
