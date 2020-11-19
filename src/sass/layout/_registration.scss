@@ -147,6 +147,10 @@
   &-form-input:focus::placeholder{
     color: transparent;
   }
+  &-form-input:not(:placeholder-shown)  + .registration-form-label{
+    display: block;
+    transform: translateY(-20px);
+  }
 &-button{
   width: 260px;
   height: 48px;
