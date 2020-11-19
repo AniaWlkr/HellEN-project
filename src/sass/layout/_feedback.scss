@@ -228,6 +228,7 @@
   //центральний слайд
   & .slick-slide {
     transition: transform 1000ms linear;
+    outline: none;
     &.slick-center {
       transform: scale(1.2);
       & .feedback-small-icon {
@@ -278,7 +279,7 @@
   background-size: 28px 16px;
   background-repeat: no-repeat;
   cursor: pointer;
-  // outline: none;
+  outline: none;
   transition: transform 500ms linear;
   &:hover,
   &:focus {
@@ -328,6 +329,7 @@
     height: 54px;
     border: none;
     background-color: transparent;
+    outline: none;
   }
   // содержимое точки
   & li button::after {
