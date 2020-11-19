@@ -77,6 +77,7 @@
     text-align: center;
     padding-top: 14px;
     padding-bottom: 14px;
+    border: 2px solid transparent;
 
     @include font(700, 12px, 15px, 0.08em);
     text-transform: uppercase;
