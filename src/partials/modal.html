@@ -17,8 +17,9 @@
             class="modal-form-input"
             placeholder=" "
             required
-            pattern="[А-Яа-яЁё]{3,10}"
-            title="Имя должно содержать от 3 до 10 букв российского алфавита"
+            pattern="^[A-Za-zА-Яа-яЁё]+$"
+            maxlength="15"
+            title="Имя может содержать буквы русского или латинского алфавита"
           />
           <span class="modal-form-label">Имя</span>
         </label>
@@ -31,7 +32,8 @@
             placeholder=" "
             required
             pattern="[0-9]{10}"
-            title="Введите номер в формате (800)-000-00-00"
+            maxlength="10"
+            title="Введите 10-значный номер телефона"
           />
           <span class="modal-form-label">Телефон</span>
         </label>
